@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F171E"
+    tools:context=".model.MovieDetail">
+
+    <ImageView
+        android:id="@+id/movie_img_detail"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/action_7" />
+
+    <TextView
+        android:id="@+id/txt_name_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Nhiệm vụ bất khả thi : Quốc gia bí ẩn"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movie_img_detail" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:drawableLeft="@drawable/ic_play"
+        android:background="@drawable/custom_btn_play"
+        android:fontFamily="@font/montserrat"
+        android:text="Watch"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_detail" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingBar_d"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="24dp"
+        android:numStars="5"
+        android:rating="3.0"
+        android:theme="@style/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_detail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
